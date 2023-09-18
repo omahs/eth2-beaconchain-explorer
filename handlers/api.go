@@ -56,7 +56,7 @@ import (
 // ApiHealthz godoc
 // @Summary Health of the explorer
 // @Tags Health
-// @Description Health endpoint for montitoring if the explorer is in sync
+// @Description Health endpoint for monitoring if the explorer is in sync
 // @Produce  text/plain
 // @Success 200 {object} types.ApiResponse
 // @Router /api/healthz [get]
@@ -142,7 +142,7 @@ func ApiHealthz(w http.ResponseWriter, r *http.Request) {
 // ApiHealthzLoadbalancer godoc
 // @Summary Health of the explorer-api regarding having a healthy connection to the database
 // @Tags Health
-// @Description Health endpoint for montitoring if the explorer-api
+// @Description Health endpoint for monitoring if the explorer-api
 // @Produce  text/plain
 // @Success 200 {object} types.ApiResponse
 // @Router /api/healthz-loadbalancer [get]
@@ -178,7 +178,7 @@ func ApiHealthzLoadbalancer(w http.ResponseWriter, r *http.Request) {
 // @Description For each 24-hour period the datapoint is denoted by the number of days that have passed since genesis for that period (= beaconchain-day)
 // @Description See https://github.com/gobitfly/eth.store for further information.
 // @Produce json
-// @Param day path string true "The beaconchain-day (periods of 225 epochs) to get the the ETH.STORE for. Must be a number or the string 'latest'."
+// @Param day path string true "The beaconchain-day (periods of 225 epochs) to get the ETH.STORE for. Must be a number or the string 'latest'."
 // @Success 200 {object} types.ApiResponse
 // @Failure 400 {object} types.ApiResponse
 // @Router /api/v1/ethstore/{day} [get]
